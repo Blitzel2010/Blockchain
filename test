@@ -1,0 +1,55 @@
+import datetime
+import random
+ct = datetime.datetime.now()
+ts = ct.timestamp()
+
+def blockchain_head():
+    print("Chain [")
+
+def blockchain_block_1():
+    hash = random.getrandbits(128)
+    print("     Block 1 {")
+    print("         Data 1: Block 1")
+    print("             Previous hash: %032x" % hash)
+    print("         current time:-", ct)
+    print("         timestamp:-", ts)
+    print("     }")
+    
+def blockchain_block_2():
+    hash = random.getrandbits(128)
+    print("     Block 2 {")
+    print("         Data 2: Block 2")
+    print("             Previous hash: %032x" % hash)
+    print("         current time:-", ct)
+    print("         timestamp:-", ts)
+    print("     }")
+
+def blockchain_block_3():
+    hash = random.getrandbits(128)
+    print("     Block 3 {")
+    print("         Data 3: Block 3")
+    print("             Previous hash: %032x" % hash)
+    print("         current time:-", ct)
+    print("         timestamp:-", ts)
+    print("     }")
+def blockchain_block_4():
+    hash = random.getrandbits(128)
+    print("     Block 4 {")
+    print("         Data 4: Block 4")
+    print("             Previous hash: %032x" % hash)
+    print("         current time:-", ct)
+    print("         timestamp:-", ts)
+    print("     }")
+
+def blockchain_end():
+    print("]")
+
+def blockchain():
+    blockchain_head()
+    blockchain_block_1()
+    blockchain_block_2()
+    blockchain_block_3()
+    blockchain_block_4()
+    blockchain_end()
+
+blockchain()
